@@ -1,0 +1,6 @@
+/home/kirill/AndroidStudioProjects/BasicMultitouch/Application/build/intermediates/classes/debug
+/home/kirill/AndroidStudioProjects/BasicMultitouch/Application/build/intermediates/pre-dexed/debug/support-annotations-21.0.2-644ed0c3b87d3253e1984b57b0d8ca16504eab6a.jar
+/home/kirill/AndroidStudioProjects/BasicMultitouch/Application/build/intermediates/pre-dexed/debug/classes-f86d2660f1f2c27d7f0e5697c959d440c36afc1c.jar
+/home/kirill/AndroidStudioProjects/BasicMultitouch/Application/build/intermediates/pre-dexed/debug/classes-102ef833f7d7b2b1d23c8530c4245ead62ce3117.jar
+/home/kirill/AndroidStudioProjects/BasicMultitouch/Application/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-994af69e6b50f9e11ece0a8d6b30f08cb6ef10b4.jar
+/home/kirill/AndroidStudioProjects/BasicMultitouch/Application/build/intermediates/pre-dexed/debug/classes-bf2cd65ade20d3a76cc9e3d059c41b915e2dd7b7.jar
