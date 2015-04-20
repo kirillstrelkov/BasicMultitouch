@@ -36,9 +36,9 @@ import com.example.android.basicmultitouch.Pools.SimplePool;
 public class TouchDisplayView extends View {
 
     // radius of active touch circle in dp
-    private static final float CIRCLE_RADIUS_DP = 75f;
+    private static final float CIRCLE_RADIUS_DP = 38f;
     // radius of historical circle in dp
-    private static final float CIRCLE_HISTORICAL_RADIUS_DP = 7f;
+    private static final float CIRCLE_HISTORICAL_RADIUS_DP = 14f;
     private static final int BACKGROUND_ACTIVE = Color.WHITE;
     // inactive border
     private static final float INACTIVE_BORDER_DP = 15f;
@@ -46,7 +46,7 @@ public class TouchDisplayView extends View {
 
     // END_INCLUDE(onTouchEvent)
     public final int[] COLORS = {
-            0xFF33B5E5, 0xFFAA66CC, 0xFF99CC00, 0xFFFFBB33, 0xFFFF4444,
+            0xFFFF0000, 0xFF00FF00, 0xFF99CC00, 0xFFFFBB33, 0xFFFF4444,
             0xFF0099CC, 0xFF9933CC, 0xFF669900, 0xFFFF8800, 0xFFCC0000
     };
 
@@ -100,7 +100,7 @@ public class TouchDisplayView extends View {
 
                 TouchHistory data = TouchHistory.obtain(event.getX(0), event.getY(0),
                         event.getPressure(0));
-                data.label = "id: " + 0;
+                data.label = "x: " + event.getX(0);
 
                 /*
                  * Store the data under its pointer identifier. The pointer
@@ -130,7 +130,7 @@ public class TouchDisplayView extends View {
 
                 TouchHistory data = TouchHistory.obtain(event.getX(index), event.getY(index),
                         event.getPressure(index));
-                data.label = "id: " + id;
+                data.label = "x: " + event.getX(index);
 
                 /*
                  * Store the data under its pointer identifier. The index of
@@ -214,7 +214,7 @@ public class TouchDisplayView extends View {
                     data.addHistory(data.x, data.y);
                     data.setTouch(event.getX(index), event.getY(index),
                             event.getPressure(index));
-
+                    data.label = "x: " + event.getX(index);
                 }
 
                 break;
@@ -323,7 +323,7 @@ public class TouchDisplayView extends View {
     static final class TouchHistory {
 
         // number of historical points to store
-        public static final int HISTORY_COUNT = 20;
+        public static final int HISTORY_COUNT = 40;
         private static final int MAX_POOL_SIZE = 10;
         private static final SimplePool<TouchHistory> sPool =
                 new SimplePool<TouchHistory>(MAX_POOL_SIZE);
